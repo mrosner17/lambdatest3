@@ -1,4 +1,4 @@
-package com.mjr.test;
+package lambdaTest3;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.mjr.test.controller")
+@ComponentScan(basePackages = "lambdaTest3.controller")
 public class Application extends SpringBootServletInitializer {
 
     /*

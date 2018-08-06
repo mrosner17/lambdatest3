@@ -1,4 +1,4 @@
-package com.mjr.test;
+package lambdaTest3;
 
 
 import com.amazonaws.serverless.proxy.internal.LambdaContainerHandler;

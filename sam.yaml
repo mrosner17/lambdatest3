@@ -5,7 +5,7 @@ Resources:
   MyServiceFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: com.mjr.test.StreamLambdaHandler::handleRequest
+      Handler: lambdaTest3.StreamLambdaHandler::handleRequest
       Runtime: java8
       CodeUri: target/my-service-1.0-SNAPSHOT.jar
       MemorySize: 512
