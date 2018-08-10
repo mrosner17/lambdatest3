@@ -17,7 +17,7 @@ import java.io.OutputStream;
 
 
 public class StreamLambdaHandler implements RequestStreamHandler {
-	private static Logger log = LoggerFactory.getLogger(StreamLambdaHandler.class);
+	private static Logger log = LoggerFactory.getLogger("lambdaTest3");
 	
     private static SpringBootLambdaContainerHandler<AwsProxyRequest, AwsProxyResponse> handler;
     static {
@@ -36,6 +36,7 @@ public class StreamLambdaHandler implements RequestStreamHandler {
         handler.proxyStream(inputStream, outputStream, context);
 
         System.out.println("HANDLER - This is loging from System.out");
+        log.info("CONTROLLER - This is logging from slf4j");
         log.error("HANDLER - This is logging from slf4j");
         // just in case it wasn't closed by the mapper
         outputStream.close();
