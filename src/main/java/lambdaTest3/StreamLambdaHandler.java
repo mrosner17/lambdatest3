@@ -36,8 +36,10 @@ public class StreamLambdaHandler implements RequestStreamHandler {
         handler.proxyStream(inputStream, outputStream, context);
 
         System.out.println("HANDLER - This is loging from System.out");
-        log.info("CONTROLLER - This is logging from slf4j");
-        log.error("HANDLER - This is logging from slf4j");
+        log.info("CONTROLLER - This is logging from logback");
+        log.error("HANDLER - This is logging from logback");
+        log.error("HANDLER - This is multi-line logging from logback with \\r \r line 2");
+        log.error("HANDLER - This is multi-line logging from logback with \\n \n line 2");
         // just in case it wasn't closed by the mapper
         outputStream.close();
     }

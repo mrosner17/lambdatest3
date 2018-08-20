@@ -3,3 +3,5 @@ target/
 .project
 .classpath
 output-sam.yaml
+jq-win64.exe
+jq-win64

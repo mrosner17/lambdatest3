@@ -21,9 +21,9 @@ public class PingController {
         Map<String, String> pong = new HashMap<>();
         
         System.out.println("CONTROLLER - This is loging from System.out");
-        log.info("CONTROLLER - This is logging from slf4j");
-        log.warn("CONTROLLER - This is logging from slf4j");
-        log.error("CONTROLLER - This is logging from slf4j");
+        log.info("CONTROLLER - This is logging from logback");
+        log.warn("CONTROLLER - This is logging from logback");
+        log.error("CONTROLLER - This is logging from logback");
         
         pong.put("pong", "Hello, World!");
         return pong;
